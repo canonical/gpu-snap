@@ -306,7 +306,7 @@ usr/lib/i386-linux-gnu/libdrm_intel.so*
 usr/lib/i386-linux-gnu/libdrm_nouveau.so*
 usr/lib/i386-linux-gnu/libdrm_radeon.so*
 usr/lib/i386-linux-gnu/libedit.so*
-usr/lib/i386-linux-gnu/libelf-0.188.so
+usr/lib/i386-linux-gnu/libelf-0.186.so
 usr/lib/i386-linux-gnu/libelf.so*
 usr/lib/i386-linux-gnu/libexpatw.so*
 usr/lib/i386-linux-gnu/libffi.so*
