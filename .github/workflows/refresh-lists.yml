@@ -1,0 +1,53 @@
+name: Refresh lists
+
+on:
+  workflow_dispatch:
+    inputs:
+      snap:
+        description: Which snap to update the lists for
+        default: mesa-core22
+      channel:
+        description: Which channel to update the lists from
+        default: stable
+      architectures:
+        description: Space-separated architectures to update the lists for
+        default: amd64 armhf arm64 ppc64el
+
+jobs:
+  refresh-lists:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: graphics-core22
+
+      - name: Download the snaps
+        run: |
+          echo -n "${{ inputs.architectures }}" | \
+            xargs -t -i -d' ' -P`nproc` \
+              env UBUNTU_STORE_ARCH={} \
+                snap download ${{ inputs.snap }} \
+                  --channel ${{ inputs.channel }} \
+                  --basename ${{ inputs.snap }}_{}
+            rm -f ${{ inputs.snap }}_*.assert
+
+      - name: Unsquash the lists
+        run: |
+          echo -n "${{ inputs.architectures }}" | \
+            xargs -t -i -d' ' -P`nproc` \
+              sh -c "unsquashfs -cat ${{ inputs.snap }}_{}.snap snap/{}.list \
+                | sed 's/\(.so.[0-9]\+\)\([0-9\.]\+\)\?$/\1*/' \
+                | sort -u \
+                > graphics-core22/lists/${{ inputs.snap }}.{}.list"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          path: graphics-core22
+          add-path: lists/*
+          branch: refresh-lists-${{ inputs.snap }}
+          commit-message: "Refresh lists from ${{ inputs.snap }}/${{ inputs.channel }}"
+          committer: "Mir CI Bot <mir-ci-bot@canonical.com>"
+          title: "Refresh lists from ${{ inputs.snap }}/${{ inputs.channel }}"
