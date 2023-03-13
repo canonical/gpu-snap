@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if ! snapctl is-connected graphics-core22
+then
+  echo "ERROR: the graphics-core22 interface isn't connected."
+  echo "  Please install and connect a graphics userspace provider."
+  echo ""
+  echo "See https://mir-server.io/ TODO for more information."
+  exit 1
+fi
+
+exec "${SNAP}/graphics/bin/graphics-core22-provider-wrapper" "$@"
