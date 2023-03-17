@@ -395,7 +395,6 @@ usr/lib/x86_64-linux-gnu/libXdmcp.so.6*
 usr/lib/x86_64-linux-gnu/libXext.so.6*
 usr/lib/x86_64-linux-gnu/libXfixes.so.3*
 usr/lib/x86_64-linux-gnu/libXxf86vm.so.1*
-usr/lib/x86_64-linux-gnu/libdrm.so.2*
 usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1*
 usr/lib/x86_64-linux-gnu/libdrm_intel.so.1*
 usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2*
@@ -836,7 +835,6 @@ usr/share/gcc/python/libstdcxx/v6/printers.py
 usr/share/gcc/python/libstdcxx/v6/xmethods.py
 usr/share/gdb/auto-load/usr/lib/i386-linux-gnu/libstdc++.so.6.0.30-gdb.py
 usr/share/glvnd/egl_vendor.d/50_mesa.json
-usr/share/libdrm/amdgpu.ids
 usr/share/lintian/overrides/libc6
 usr/share/lintian/overrides/libdrm-nouveau2
 usr/share/lintian/overrides/libedit2

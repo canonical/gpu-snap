@@ -34,7 +34,6 @@ usr/lib/powerpc64le-linux-gnu/libXdmcp.so.6*
 usr/lib/powerpc64le-linux-gnu/libXext.so.6*
 usr/lib/powerpc64le-linux-gnu/libXfixes.so.3*
 usr/lib/powerpc64le-linux-gnu/libXxf86vm.so.1*
-usr/lib/powerpc64le-linux-gnu/libdrm.so.2*
 usr/lib/powerpc64le-linux-gnu/libdrm_amdgpu.so.1*
 usr/lib/powerpc64le-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/powerpc64le-linux-gnu/libdrm_radeon.so.1*
@@ -294,15 +293,10 @@ usr/share/bug/mesa-vulkan-drivers/script
 usr/share/bug/vdpau-driver-all
 usr/share/doc/libdrm-amdgpu1/changelog.Debian.gz
 usr/share/doc/libdrm-amdgpu1/copyright
-usr/share/doc/libdrm-common/changelog.Debian.gz
-usr/share/doc/libdrm-common/copyright
 usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
 usr/share/doc/libdrm-nouveau2/copyright
 usr/share/doc/libdrm-radeon1/changelog.Debian.gz
 usr/share/doc/libdrm-radeon1/copyright
-usr/share/doc/libdrm2/NEWS.Debian.gz
-usr/share/doc/libdrm2/changelog.Debian.gz
-usr/share/doc/libdrm2/copyright
 usr/share/doc/libegl-mesa0/changelog.Debian.gz
 usr/share/doc/libegl-mesa0/copyright
 usr/share/doc/libegl1/changelog.Debian.gz
@@ -411,7 +405,6 @@ usr/share/drirc.d/00-mesa-defaults.conf
 usr/share/drirc.d/00-radv-defaults.conf
 usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
 usr/share/glvnd/egl_vendor.d/50_mesa.json
-usr/share/libdrm/amdgpu.ids
 usr/share/lintian/overrides/libdrm-nouveau2
 usr/share/lintian/overrides/libgbm1
 usr/share/lintian/overrides/libglapi-mesa
