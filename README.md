@@ -7,12 +7,6 @@ This repository contains some helper items for working with the graphics-core22 
    You should prime this script in your snap and use it in your `command-chain:` for all
    apps requiring GPU support:
    ```yaml
-   plugs:
-     graphics-core22:
-       interface: content
-       target: $SNAP/graphics
-       default-provider: mesa-core22
-
    apps:
      app:
        plugs:
@@ -23,9 +17,7 @@ This repository contains some helper items for working with the graphics-core22 
        command: usr/bin/eglinfo
    ```
 
-   **NB**: the script assumes that `graphics-core22.target:` is set to `$SNAP/graphics`. If you need
-   a different location, ultimately you just need to wrap your application with
-   `bin/graphics-core22-provider-wrapper` from the plug target.
+   **NB**: the script assumes that `graphics-core22.target:` is set to `$SNAP/graphics`.
 
 2. `bin/graphics-core22-cleanup`
    This is a script to help avoid priming any libraries provided by the graphics-core22 providers.
@@ -50,4 +42,4 @@ This repository contains some helper items for working with the graphics-core22 
          - bin/graphics-core22-wrapper
    ```
 
-For more information about the `graphics-core22` interface, see: [TBD].
+For more information about the `graphics-core22` interface, see: [The graphics-core22 snap interface](https://mir-server.io/docs/the-graphics-core22-snap-interface) documentation.
