@@ -5,7 +5,7 @@ then
   echo "ERROR: the graphics-core22 interface isn't connected."
   echo "  Please install and connect a graphics userspace provider."
   echo ""
-  echo "The default provider is `mesa-core22`, you can install it and connect by issuing:"
+  echo "The default provider is mesa-core22, you can install it and connect by issuing:"
   echo "  sudo snap install mesa-core22"
   echo "  sudo snap connect ${SNAP_INSTANCE_NAME}:graphics-core22 mesa-core22"
   echo ""
