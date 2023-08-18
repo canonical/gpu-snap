@@ -48,6 +48,7 @@ usr/lib/aarch64-linux-gnu/dri/tegra_dri.so
 usr/lib/aarch64-linux-gnu/dri/v3d_dri.so
 usr/lib/aarch64-linux-gnu/dri/vc4_dri.so
 usr/lib/aarch64-linux-gnu/dri/virtio_gpu_dri.so
+usr/lib/aarch64-linux-gnu/dri/virtio_gpu_drv_video.so
 usr/lib/aarch64-linux-gnu/dri/vmwgfx_dri.so
 usr/lib/aarch64-linux-gnu/dri/zink_dri.so
 usr/lib/aarch64-linux-gnu/libEGL.so.1*
@@ -119,6 +120,8 @@ usr/lib/aarch64-linux-gnu/vdpau/libvdpau_radeonsi.so.1*
 usr/lib/aarch64-linux-gnu/vdpau/libvdpau_trace.so.1*
 usr/lib/aarch64-linux-gnu/vdpau/libvdpau_va_gl.so
 usr/lib/aarch64-linux-gnu/vdpau/libvdpau_va_gl.so.1*
+usr/lib/aarch64-linux-gnu/vdpau/libvdpau_virtio_gpu.so
+usr/lib/aarch64-linux-gnu/vdpau/libvdpau_virtio_gpu.so.1*
 usr/share/X11/XErrorDB
 usr/share/X11/locale/C/Compose
 usr/share/X11/locale/C/XI18N_OBJS
