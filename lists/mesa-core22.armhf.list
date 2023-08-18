@@ -46,6 +46,7 @@ usr/lib/arm-linux-gnueabihf/dri/tegra_dri.so
 usr/lib/arm-linux-gnueabihf/dri/v3d_dri.so
 usr/lib/arm-linux-gnueabihf/dri/vc4_dri.so
 usr/lib/arm-linux-gnueabihf/dri/virtio_gpu_dri.so
+usr/lib/arm-linux-gnueabihf/dri/virtio_gpu_drv_video.so
 usr/lib/arm-linux-gnueabihf/dri/vmwgfx_dri.so
 usr/lib/arm-linux-gnueabihf/dri/zink_dri.so
 usr/lib/arm-linux-gnueabihf/libEGL.so.1*
@@ -115,6 +116,8 @@ usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_radeonsi.so.1*
 usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_trace.so.1*
 usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_va_gl.so
 usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_va_gl.so.1*
+usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_virtio_gpu.so
+usr/lib/arm-linux-gnueabihf/vdpau/libvdpau_virtio_gpu.so.1*
 usr/share/X11/XErrorDB
 usr/share/X11/locale/C/Compose
 usr/share/X11/locale/C/XI18N_OBJS
