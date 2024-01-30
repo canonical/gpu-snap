@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if ! snapctl is-connected graphics-core24
+then
+  echo "ERROR: the graphics-core24 interface isn't connected."
+  echo "  Please install and connect a graphics userspace provider."
+  echo ""
+  echo "The default provider is mesa-core24, you can install it and connect by issuing:"
+  echo "  sudo snap install mesa-core24"
+  echo "  sudo snap connect ${SNAP_INSTANCE_NAME}:graphics-core24 mesa-core24"
+  echo ""
+  echo "See https://mir-server.io/docs/the-graphics-core24-snap-interface for more information."
+  exit 1
+fi
+
+exec "${SNAP}/graphics/bin/graphics-core24-provider-wrapper" "$@"

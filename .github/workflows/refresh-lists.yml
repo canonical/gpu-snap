@@ -3,15 +3,9 @@ name: Refresh lists
 on:
   workflow_dispatch:
     inputs:
-      snap:
-        description: Which snap to update the lists for
-        default: mesa-core22
-      channel:
-        description: Which channel to update the lists from
-        default: stable
-      architectures:
-        description: Space-separated architectures to update the lists for
-        default: amd64 armhf arm64 ppc64el
+      snaps:
+        description: Space-separated `snap/channel:arch1,arch2` to update the lists for
+        default: mesa-core22/stable:amd64,armhf,arm64,ppc64el,riscv64 mesa-core24/edge:amd64,arm64,ppc64el
 
 jobs:
   refresh-lists:
@@ -19,35 +13,50 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          path: graphics-core22
+          path: graphics-core
+
+      - name: Build the snap matrix
+        id: snap-matrix
+        run: |
+          MATRIX=()
+          for snap in ${{ inputs.snaps }}; do
+            [[ $snap =~ ([^/]*)/(.*):(.*) ]]
+            for arch in ${BASH_REMATCH[3]//,/ }; do
+              MATRIX+=( ${BASH_REMATCH[1]} ${BASH_REMATCH[2]} $arch )
+            done
+          done
+          echo "matrix=${MATRIX[@]}" >> $GITHUB_OUTPUT
 
       - name: Download the snaps
         run: |
-          echo -n "${{ inputs.architectures }}" | \
-            xargs -t -i -d' ' -P`nproc` \
-              env UBUNTU_STORE_ARCH={} \
-                snap download ${{ inputs.snap }} \
-                  --channel ${{ inputs.channel }} \
-                  --basename ${{ inputs.snap }}_{}
-            rm -f ${{ inputs.snap }}_*.assert
+          echo -n "${{ steps.snap-matrix.outputs.matrix }}" |
+            xargs -d' ' -n3 -P`nproc` \
+              bash -xc '
+                UBUNTU_STORE_ARCH=$2 snap download $0 \
+                  --channel $1 \
+                  --basename $0_$2
+              '
 
       - name: Unsquash the lists
         run: |
-          echo -n "${{ inputs.architectures }}" | \
-            xargs -t -i -d' ' -P`nproc` \
-              sh -c "unsquashfs -cat ${{ inputs.snap }}_{}.snap snap/{}.list \
+          echo -n "${{ steps.snap-matrix.outputs.matrix }}" |
+            xargs -d' ' -n3 -P`nproc` \
+              bash -xc "unsquashfs -cat \$0_\$2.snap snap/\$2.list \
                 | sed 's/\(.so.[0-9]\+\)\([0-9\.]\+\)\?$/\1*/' \
                 | sort -u \
-                > graphics-core22/lists/${{ inputs.snap }}.{}.list"
+                > graphics-core/lists/\$0.\$2.list"
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v4
         with:
-          path: graphics-core22
+          path: graphics-core
           add-paths: lists/*
-          branch: refresh-lists-${{ inputs.snap }}
-          commit-message: "Refresh lists from ${{ inputs.snap }}/${{ inputs.channel }}"
+          branch: refresh-lists-${{ github.run_id }}
+          commit-message: |
+            Refresh snap lists
+
+            ${{ inputs.snaps }}
           committer: "Mir CI Bot <mir-ci-bot@canonical.com>"
-          title: "Refresh lists from ${{ inputs.snap }}/${{ inputs.channel }}"
+          title: "Refresh snap lists"
