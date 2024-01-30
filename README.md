@@ -35,7 +35,7 @@ This repository contains some helper items for working with the graphics-core* s
 
      graphics-coreXX:
        after: [my-app]
-       source: https://github.com/MirServer/graphics-core22.git
+       source: https://github.com/MirServer/graphics-core.git
        plugin: dump
        override-prime: |
          craftctl default
