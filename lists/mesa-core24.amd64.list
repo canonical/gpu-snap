@@ -1028,6 +1028,7 @@ usr/lib/python3.11/zoneinfo/_tzpath.py
 usr/lib/python3.11/zoneinfo/_zoneinfo.py
 usr/lib/systemd/system/dpkg-db-backup.service
 usr/lib/systemd/system/dpkg-db-backup.timer
+usr/lib/tmpfiles.d/libselinux1.conf
 usr/lib/valgrind/python3.supp
 usr/lib/x86_64-linux-gnu/dri/crocus_dri.so
 usr/lib/x86_64-linux-gnu/dri/d3d12_dri.so
@@ -1332,6 +1333,7 @@ usr/lib/x86_64-linux-gnu/libXfixes.so.3*
 usr/lib/x86_64-linux-gnu/libXxf86vm.so.1*
 usr/lib/x86_64-linux-gnu/libacl.so.1*
 usr/lib/x86_64-linux-gnu/libbsd.so.0*
+usr/lib/x86_64-linux-gnu/libcrypt.so.1*
 usr/lib/x86_64-linux-gnu/libcrypto.so.3*
 usr/lib/x86_64-linux-gnu/libdb-5.3.so
 usr/lib/x86_64-linux-gnu/libdrm.so.2*
@@ -1370,6 +1372,7 @@ usr/lib/x86_64-linux-gnu/libpanelw.so.6*
 usr/lib/x86_64-linux-gnu/libpciaccess.so.0*
 usr/lib/x86_64-linux-gnu/libpcre2-8.so.0*
 usr/lib/x86_64-linux-gnu/libreadline.so.8*
+usr/lib/x86_64-linux-gnu/libselinux.so.1*
 usr/lib/x86_64-linux-gnu/libsensors.so.5*
 usr/lib/x86_64-linux-gnu/libsqlite3.so.0*
 usr/lib/x86_64-linux-gnu/libssl.so.3*

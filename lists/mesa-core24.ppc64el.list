@@ -345,6 +345,7 @@ usr/lib/powerpc64le-linux-gnu/libXfixes.so.3*
 usr/lib/powerpc64le-linux-gnu/libXxf86vm.so.1*
 usr/lib/powerpc64le-linux-gnu/libacl.so.1*
 usr/lib/powerpc64le-linux-gnu/libbsd.so.0*
+usr/lib/powerpc64le-linux-gnu/libcrypt.so.1*
 usr/lib/powerpc64le-linux-gnu/libcrypto.so.3*
 usr/lib/powerpc64le-linux-gnu/libdb-5.3.so
 usr/lib/powerpc64le-linux-gnu/libdrm.so.2*
@@ -380,6 +381,7 @@ usr/lib/powerpc64le-linux-gnu/libnvidia-egl-wayland.so.1*
 usr/lib/powerpc64le-linux-gnu/libpanelw.so.6*
 usr/lib/powerpc64le-linux-gnu/libpcre2-8.so.0*
 usr/lib/powerpc64le-linux-gnu/libreadline.so.8*
+usr/lib/powerpc64le-linux-gnu/libselinux.so.1*
 usr/lib/powerpc64le-linux-gnu/libsensors.so.5*
 usr/lib/powerpc64le-linux-gnu/libsqlite3.so.0*
 usr/lib/powerpc64le-linux-gnu/libssl.so.3*
@@ -1039,6 +1041,7 @@ usr/lib/python3.11/zoneinfo/_tzpath.py
 usr/lib/python3.11/zoneinfo/_zoneinfo.py
 usr/lib/systemd/system/dpkg-db-backup.service
 usr/lib/systemd/system/dpkg-db-backup.timer
+usr/lib/tmpfiles.d/libselinux1.conf
 usr/lib/valgrind/python3.supp
 usr/share/X11/XErrorDB
 usr/share/X11/locale/C/Compose
