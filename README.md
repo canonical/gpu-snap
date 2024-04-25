@@ -19,7 +19,7 @@ This repository contains some helper items for working with the interfaces suppl
        command: usr/bin/eglinfo
    ```
 
-   **NB**: the script assumes that `gpu-2404.target:` is set to `$SNAP/gpu`.
+   **NB**: the script assumes that `gpu-2404.target:` is set to `$SNAP/gpu-2404`.
 
 2. `bin/gpu-2404-cleanup`
    This is a script to help avoid priming any libraries provided by the content providers.
