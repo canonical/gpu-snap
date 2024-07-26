@@ -327,6 +327,8 @@ usr/lib/i386-linux-gnu/libpciaccess.so.0*
 usr/lib/i386-linux-gnu/libsensors.so.5*
 usr/lib/i386-linux-gnu/libstdc++.so.6*
 usr/lib/i386-linux-gnu/libtic.so.6*
+usr/lib/i386-linux-gnu/libva-drm.so.2*
+usr/lib/i386-linux-gnu/libva-wayland.so.2*
 usr/lib/i386-linux-gnu/libva-x11.so.2*
 usr/lib/i386-linux-gnu/libva.so.2*
 usr/lib/i386-linux-gnu/libvdpau.so.1*
@@ -335,7 +337,9 @@ usr/lib/i386-linux-gnu/libvulkan_intel.so
 usr/lib/i386-linux-gnu/libvulkan_intel_hasvk.so
 usr/lib/i386-linux-gnu/libvulkan_lvp.so
 usr/lib/i386-linux-gnu/libvulkan_radeon.so
+usr/lib/i386-linux-gnu/libvulkan_virtio.so
 usr/lib/i386-linux-gnu/libwayland-client.so.0*
+usr/lib/i386-linux-gnu/libwayland-cursor.so.0*
 usr/lib/i386-linux-gnu/libwayland-egl.so.1*
 usr/lib/i386-linux-gnu/libwayland-server.so.0*
 usr/lib/i386-linux-gnu/libxcb-dri2.so.0*
@@ -352,8 +356,6 @@ usr/lib/i386-linux-gnu/libxshmfence.so.1*
 usr/lib/i386-linux-gnu/libzstd.so.1*
 usr/lib/i386-linux-gnu/vdpau/libvdpau_nouveau.so
 usr/lib/i386-linux-gnu/vdpau/libvdpau_nouveau.so.1*
-usr/lib/i386-linux-gnu/vdpau/libvdpau_r300.so
-usr/lib/i386-linux-gnu/vdpau/libvdpau_r300.so.1*
 usr/lib/i386-linux-gnu/vdpau/libvdpau_r600.so
 usr/lib/i386-linux-gnu/vdpau/libvdpau_r600.so.1*
 usr/lib/i386-linux-gnu/vdpau/libvdpau_radeonsi.so
@@ -419,6 +421,8 @@ usr/lib/x86_64-linux-gnu/libigdgmm.so.12*
 usr/lib/x86_64-linux-gnu/libnvidia-egl-wayland.so.1*
 usr/lib/x86_64-linux-gnu/libpciaccess.so.0*
 usr/lib/x86_64-linux-gnu/libsensors.so.5*
+usr/lib/x86_64-linux-gnu/libva-drm.so.2*
+usr/lib/x86_64-linux-gnu/libva-wayland.so.2*
 usr/lib/x86_64-linux-gnu/libva-x11.so.2*
 usr/lib/x86_64-linux-gnu/libva.so.2*
 usr/lib/x86_64-linux-gnu/libvdpau.so.1*
@@ -427,7 +431,9 @@ usr/lib/x86_64-linux-gnu/libvulkan_intel.so
 usr/lib/x86_64-linux-gnu/libvulkan_intel_hasvk.so
 usr/lib/x86_64-linux-gnu/libvulkan_lvp.so
 usr/lib/x86_64-linux-gnu/libvulkan_radeon.so
+usr/lib/x86_64-linux-gnu/libvulkan_virtio.so
 usr/lib/x86_64-linux-gnu/libwayland-client.so.0*
+usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0*
 usr/lib/x86_64-linux-gnu/libwayland-egl.so.1*
 usr/lib/x86_64-linux-gnu/libwayland-server.so.0*
 usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0*
@@ -445,8 +451,6 @@ usr/lib/x86_64-linux-gnu/vdpau/libvdpau_d3d12.so
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_d3d12.so.1*
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_nouveau.so
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_nouveau.so.1*
-usr/lib/x86_64-linux-gnu/vdpau/libvdpau_r300.so
-usr/lib/x86_64-linux-gnu/vdpau/libvdpau_r300.so.1*
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_r600.so
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_r600.so.1*
 usr/lib/x86_64-linux-gnu/vdpau/libvdpau_radeonsi.so
@@ -761,6 +765,10 @@ usr/share/doc/libstdc++6
 usr/share/doc/libtinfo6/FAQ
 usr/share/doc/libtinfo6/changelog.Debian.gz
 usr/share/doc/libtinfo6/copyright
+usr/share/doc/libva-drm2/changelog.Debian.gz
+usr/share/doc/libva-drm2/copyright
+usr/share/doc/libva-wayland2/changelog.Debian.gz
+usr/share/doc/libva-wayland2/copyright
 usr/share/doc/libva-x11-2/changelog.Debian.gz
 usr/share/doc/libva-x11-2/copyright
 usr/share/doc/libva2/changelog.Debian.gz
@@ -774,6 +782,8 @@ usr/share/doc/libvulkan1/changelog.Debian.gz
 usr/share/doc/libvulkan1/copyright
 usr/share/doc/libwayland-client0/changelog.Debian.gz
 usr/share/doc/libwayland-client0/copyright
+usr/share/doc/libwayland-cursor0/changelog.Debian.gz
+usr/share/doc/libwayland-cursor0/copyright
 usr/share/doc/libwayland-egl1/changelog.Debian.gz
 usr/share/doc/libwayland-egl1/copyright
 usr/share/doc/libwayland-server0/changelog.Debian.gz
@@ -874,4 +884,6 @@ usr/share/vulkan/icd.d/lvp_icd.i686.json
 usr/share/vulkan/icd.d/lvp_icd.x86_64.json
 usr/share/vulkan/icd.d/radeon_icd.i686.json
 usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+usr/share/vulkan/icd.d/virtio_icd.i686.json
+usr/share/vulkan/icd.d/virtio_icd.x86_64.json
 usr/share/vulkan/implicit_layer.d/VkLayer_MESA_device_select.json

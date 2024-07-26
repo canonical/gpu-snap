@@ -76,12 +76,15 @@ usr/lib/riscv64-linux-gnu/libicutu.so.70*
 usr/lib/riscv64-linux-gnu/libicuuc.so.70*
 usr/lib/riscv64-linux-gnu/libnvidia-egl-wayland.so.1*
 usr/lib/riscv64-linux-gnu/libsensors.so.5*
+usr/lib/riscv64-linux-gnu/libva-drm.so.2*
+usr/lib/riscv64-linux-gnu/libva-wayland.so.2*
 usr/lib/riscv64-linux-gnu/libva-x11.so.2*
 usr/lib/riscv64-linux-gnu/libva.so.2*
 usr/lib/riscv64-linux-gnu/libvdpau.so.1*
 usr/lib/riscv64-linux-gnu/libvulkan.so.1*
 usr/lib/riscv64-linux-gnu/libvulkan_radeon.so
 usr/lib/riscv64-linux-gnu/libwayland-client.so.0*
+usr/lib/riscv64-linux-gnu/libwayland-cursor.so.0*
 usr/lib/riscv64-linux-gnu/libwayland-egl.so.1*
 usr/lib/riscv64-linux-gnu/libwayland-server.so.0*
 usr/lib/riscv64-linux-gnu/libxcb-dri2.so.0*
@@ -97,8 +100,6 @@ usr/lib/riscv64-linux-gnu/libxml2.so.2*
 usr/lib/riscv64-linux-gnu/libxshmfence.so.1*
 usr/lib/riscv64-linux-gnu/vdpau/libvdpau_nouveau.so
 usr/lib/riscv64-linux-gnu/vdpau/libvdpau_nouveau.so.1*
-usr/lib/riscv64-linux-gnu/vdpau/libvdpau_r300.so
-usr/lib/riscv64-linux-gnu/vdpau/libvdpau_r300.so.1*
 usr/lib/riscv64-linux-gnu/vdpau/libvdpau_r600.so
 usr/lib/riscv64-linux-gnu/vdpau/libvdpau_r600.so.1*
 usr/lib/riscv64-linux-gnu/vdpau/libvdpau_radeonsi.so
@@ -365,6 +366,10 @@ usr/share/doc/libsensors-config/copyright
 usr/share/doc/libsensors5/README.Debian
 usr/share/doc/libsensors5/changelog.Debian.gz
 usr/share/doc/libsensors5/copyright
+usr/share/doc/libva-drm2/changelog.Debian.gz
+usr/share/doc/libva-drm2/copyright
+usr/share/doc/libva-wayland2/changelog.Debian.gz
+usr/share/doc/libva-wayland2/copyright
 usr/share/doc/libva-x11-2/changelog.Debian.gz
 usr/share/doc/libva-x11-2/copyright
 usr/share/doc/libva2/changelog.Debian.gz
@@ -378,6 +383,8 @@ usr/share/doc/libvulkan1/changelog.Debian.gz
 usr/share/doc/libvulkan1/copyright
 usr/share/doc/libwayland-client0/changelog.Debian.gz
 usr/share/doc/libwayland-client0/copyright
+usr/share/doc/libwayland-cursor0/changelog.Debian.gz
+usr/share/doc/libwayland-cursor0/copyright
 usr/share/doc/libwayland-egl1/changelog.Debian.gz
 usr/share/doc/libwayland-egl1/copyright
 usr/share/doc/libwayland-server0/changelog.Debian.gz
