@@ -5,7 +5,7 @@ on:
     inputs:
       snaps:
         description: Space-separated `snap/channel:arch1,arch2` to update the lists for
-        default: mesa-core22/stable:amd64,armhf,arm64,ppc64el,riscv64 mesa-core24/edge:amd64,arm64,ppc64el
+        default: mesa-core22/stable:amd64,armhf,arm64,ppc64el,riscv64 mesa-2404/stable:amd64,armhf,arm64,ppc64el,riscv64,s390x
 
 jobs:
   refresh-lists:
