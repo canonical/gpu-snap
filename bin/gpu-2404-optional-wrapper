@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if ! snapctl is-connected gpu-2404
+then
+  echo "WARNING: the gpu-2404 interface isn't connected."
+  echo "  You may want to install and connect a graphics userspace provider."
+  echo ""
+  echo "The default provider is mesa-2404, you can install it and connect by issuing:"
+  echo "  sudo snap install mesa-2404"
+  echo "  sudo snap connect ${SNAP_INSTANCE_NAME}:gpu-2404 mesa-2404"
+  echo ""
+  echo "See https://mir-server.io/docs/the-gpu-2404-snap-interface for more information."
+  exit 0
+fi
+
+exec "${SNAP}/gpu-2404/bin/gpu-2404-provider-wrapper" "$@"
