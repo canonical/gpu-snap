@@ -19,6 +19,7 @@ usr/lib/riscv64-linux-gnu/dri/ingenic-drm_dri.so
 usr/lib/riscv64-linux-gnu/dri/kirin_dri.so
 usr/lib/riscv64-linux-gnu/dri/kms_swrast_dri.so
 usr/lib/riscv64-linux-gnu/dri/komeda_dri.so
+usr/lib/riscv64-linux-gnu/dri/libdril_dri.so
 usr/lib/riscv64-linux-gnu/dri/lima_dri.so
 usr/lib/riscv64-linux-gnu/dri/mali-dp_dri.so
 usr/lib/riscv64-linux-gnu/dri/mcde_dri.so
@@ -38,6 +39,8 @@ usr/lib/riscv64-linux-gnu/dri/radeonsi_drv_video.so
 usr/lib/riscv64-linux-gnu/dri/rcar-du_dri.so
 usr/lib/riscv64-linux-gnu/dri/repaper_dri.so
 usr/lib/riscv64-linux-gnu/dri/rockchip_dri.so
+usr/lib/riscv64-linux-gnu/dri/rzg2l-du_dri.so
+usr/lib/riscv64-linux-gnu/dri/ssd130x_dri.so
 usr/lib/riscv64-linux-gnu/dri/st7586_dri.so
 usr/lib/riscv64-linux-gnu/dri/st7735r_dri.so
 usr/lib/riscv64-linux-gnu/dri/sti_dri.so
@@ -47,7 +50,9 @@ usr/lib/riscv64-linux-gnu/dri/swrast_dri.so
 usr/lib/riscv64-linux-gnu/dri/udl_dri.so
 usr/lib/riscv64-linux-gnu/dri/virtio_gpu_dri.so
 usr/lib/riscv64-linux-gnu/dri/virtio_gpu_drv_video.so
+usr/lib/riscv64-linux-gnu/dri/vkms_dri.so
 usr/lib/riscv64-linux-gnu/dri/zink_dri.so
+usr/lib/riscv64-linux-gnu/dri/zynqmp-dpsub_dri.so
 usr/lib/riscv64-linux-gnu/libEGL.so.1*
 usr/lib/riscv64-linux-gnu/libEGL_mesa.so.0*
 usr/lib/riscv64-linux-gnu/libGL.so.1*
@@ -56,8 +61,8 @@ usr/lib/riscv64-linux-gnu/libGLX.so.0*
 usr/lib/riscv64-linux-gnu/libGLX_indirect.so.0*
 usr/lib/riscv64-linux-gnu/libGLX_mesa.so.0*
 usr/lib/riscv64-linux-gnu/libGLdispatch.so.0*
-usr/lib/riscv64-linux-gnu/libLLVM-17.so
-usr/lib/riscv64-linux-gnu/libLLVM-17.so.1*
+usr/lib/riscv64-linux-gnu/libLLVM-19.so
+usr/lib/riscv64-linux-gnu/libLLVM.so.19*
 usr/lib/riscv64-linux-gnu/libVkLayer_MESA_device_select.so
 usr/lib/riscv64-linux-gnu/libVkLayer_MESA_overlay.so
 usr/lib/riscv64-linux-gnu/libX11-xcb.so.1*
@@ -70,8 +75,8 @@ usr/lib/riscv64-linux-gnu/libXfixes.so.3*
 usr/lib/riscv64-linux-gnu/libXxf86vm.so.1*
 usr/lib/riscv64-linux-gnu/libatomic.so.1*
 usr/lib/riscv64-linux-gnu/libdrm_amdgpu.so.1*
-usr/lib/riscv64-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/riscv64-linux-gnu/libdrm_radeon.so.1*
+usr/lib/riscv64-linux-gnu/libgallium-24.2.8-1ubuntu1~24.04.1.so
 usr/lib/riscv64-linux-gnu/libgbm.so.1*
 usr/lib/riscv64-linux-gnu/libglapi.so.0*
 usr/lib/riscv64-linux-gnu/libicudata.so.74*
@@ -81,6 +86,8 @@ usr/lib/riscv64-linux-gnu/libicutest.so.74*
 usr/lib/riscv64-linux-gnu/libicutu.so.74*
 usr/lib/riscv64-linux-gnu/libicuuc.so.74*
 usr/lib/riscv64-linux-gnu/libnvidia-egl-wayland.so.1*
+usr/lib/riscv64-linux-gnu/libnvidia-egl-xcb.so.1*
+usr/lib/riscv64-linux-gnu/libnvidia-egl-xlib.so.1*
 usr/lib/riscv64-linux-gnu/libsensors.so.5*
 usr/lib/riscv64-linux-gnu/libva-drm.so.2*
 usr/lib/riscv64-linux-gnu/libva-wayland.so.2*
@@ -88,7 +95,10 @@ usr/lib/riscv64-linux-gnu/libva-x11.so.2*
 usr/lib/riscv64-linux-gnu/libva.so.2*
 usr/lib/riscv64-linux-gnu/libvdpau.so.1*
 usr/lib/riscv64-linux-gnu/libvulkan.so.1*
+usr/lib/riscv64-linux-gnu/libvulkan_lvp.so
+usr/lib/riscv64-linux-gnu/libvulkan_nouveau.so
 usr/lib/riscv64-linux-gnu/libvulkan_radeon.so
+usr/lib/riscv64-linux-gnu/libvulkan_virtio.so
 usr/lib/riscv64-linux-gnu/libwayland-client.so.0*
 usr/lib/riscv64-linux-gnu/libwayland-cursor.so.0*
 usr/lib/riscv64-linux-gnu/libwayland-egl.so.1*
@@ -132,6 +142,8 @@ usr/share/bug/libglx-mesa0/control
 usr/share/bug/libglx-mesa0/script
 usr/share/bug/libglx0/control
 usr/share/bug/libvdpau1
+usr/share/bug/mesa-libgallium/control
+usr/share/bug/mesa-libgallium/script
 usr/share/bug/mesa-va-drivers/control
 usr/share/bug/mesa-va-drivers/script
 usr/share/bug/mesa-vdpau-drivers/control
@@ -144,8 +156,6 @@ usr/share/doc/libdrm-amdgpu1/changelog.Debian.gz
 usr/share/doc/libdrm-amdgpu1/copyright
 usr/share/doc/libdrm-common/changelog.Debian.gz
 usr/share/doc/libdrm-common/copyright
-usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
-usr/share/doc/libdrm-nouveau2/copyright
 usr/share/doc/libdrm-radeon1/changelog.Debian.gz
 usr/share/doc/libdrm-radeon1/copyright
 usr/share/doc/libdrm2/changelog.Debian.gz
@@ -172,8 +182,8 @@ usr/share/doc/libglx0/changelog.Debian.gz
 usr/share/doc/libglx0/copyright
 usr/share/doc/libicu74/changelog.Debian.gz
 usr/share/doc/libicu74/copyright
-usr/share/doc/libllvm17t64/changelog.Debian.gz
-usr/share/doc/libllvm17t64/copyright
+usr/share/doc/libllvm19/changelog.Debian.gz
+usr/share/doc/libllvm19/copyright
 usr/share/doc/libnvidia-egl-wayland1/changelog.Debian.gz
 usr/share/doc/libnvidia-egl-wayland1/copyright
 usr/share/doc/libsensors-config/changelog.Debian.gz
@@ -247,6 +257,8 @@ usr/share/doc/libxshmfence1/changelog.Debian.gz
 usr/share/doc/libxshmfence1/copyright
 usr/share/doc/libxxf86vm1/changelog.Debian.gz
 usr/share/doc/libxxf86vm1/copyright
+usr/share/doc/mesa-libgallium/changelog.Debian.gz
+usr/share/doc/mesa-libgallium/copyright
 usr/share/doc/mesa-va-drivers/changelog.Debian.gz
 usr/share/doc/mesa-va-drivers/copyright
 usr/share/doc/mesa-vdpau-drivers/changelog.Debian.gz
@@ -260,6 +272,8 @@ usr/share/doc/vdpau-driver-all/copyright
 usr/share/drirc.d/00-mesa-defaults.conf
 usr/share/drirc.d/00-radv-defaults.conf
 usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
+usr/share/egl/egl_external_platform.d/20_nvidia_xcb.json
+usr/share/egl/egl_external_platform.d/20_nvidia_xlib.json
 usr/share/glvnd/egl_vendor.d/50_mesa.json
 usr/share/libdrm/amdgpu.ids
 usr/share/lintian/overrides/libgbm1
@@ -267,12 +281,16 @@ usr/share/lintian/overrides/libglapi-mesa
 usr/share/lintian/overrides/libgles2
 usr/share/lintian/overrides/libglvnd0
 usr/share/lintian/overrides/libicu74
-usr/share/lintian/overrides/libllvm17t64
+usr/share/lintian/overrides/libllvm19
 usr/share/lintian/overrides/libx11-6
 usr/share/lintian/overrides/libxml2
+usr/share/lintian/overrides/mesa-libgallium
 usr/share/lintian/overrides/mesa-vulkan-drivers
 usr/share/man/man5/Compose.5.gz
 usr/share/man/man5/XCompose.5.gz
 usr/share/vulkan/explicit_layer.d/VkLayer_MESA_overlay.json
+usr/share/vulkan/icd.d/lvp_icd.riscv64.json
+usr/share/vulkan/icd.d/nouveau_icd.riscv64.json
 usr/share/vulkan/icd.d/radeon_icd.riscv64.json
+usr/share/vulkan/icd.d/virtio_icd.riscv64.json
 usr/share/vulkan/implicit_layer.d/VkLayer_MESA_device_select.json
