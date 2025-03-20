@@ -21,6 +21,7 @@ usr/lib/arm-linux-gnueabihf/dri/kgsl_dri.so
 usr/lib/arm-linux-gnueabihf/dri/kirin_dri.so
 usr/lib/arm-linux-gnueabihf/dri/kms_swrast_dri.so
 usr/lib/arm-linux-gnueabihf/dri/komeda_dri.so
+usr/lib/arm-linux-gnueabihf/dri/libdril_dri.so
 usr/lib/arm-linux-gnueabihf/dri/lima_dri.so
 usr/lib/arm-linux-gnueabihf/dri/mali-dp_dri.so
 usr/lib/arm-linux-gnueabihf/dri/mcde_dri.so
@@ -33,6 +34,7 @@ usr/lib/arm-linux-gnueabihf/dri/nouveau_dri.so
 usr/lib/arm-linux-gnueabihf/dri/nouveau_drv_video.so
 usr/lib/arm-linux-gnueabihf/dri/panel-mipi-dbi_dri.so
 usr/lib/arm-linux-gnueabihf/dri/panfrost_dri.so
+usr/lib/arm-linux-gnueabihf/dri/panthor_dri.so
 usr/lib/arm-linux-gnueabihf/dri/pl111_dri.so
 usr/lib/arm-linux-gnueabihf/dri/r300_dri.so
 usr/lib/arm-linux-gnueabihf/dri/r600_dri.so
@@ -42,6 +44,8 @@ usr/lib/arm-linux-gnueabihf/dri/radeonsi_drv_video.so
 usr/lib/arm-linux-gnueabihf/dri/rcar-du_dri.so
 usr/lib/arm-linux-gnueabihf/dri/repaper_dri.so
 usr/lib/arm-linux-gnueabihf/dri/rockchip_dri.so
+usr/lib/arm-linux-gnueabihf/dri/rzg2l-du_dri.so
+usr/lib/arm-linux-gnueabihf/dri/ssd130x_dri.so
 usr/lib/arm-linux-gnueabihf/dri/st7586_dri.so
 usr/lib/arm-linux-gnueabihf/dri/st7735r_dri.so
 usr/lib/arm-linux-gnueabihf/dri/sti_dri.so
@@ -54,8 +58,10 @@ usr/lib/arm-linux-gnueabihf/dri/v3d_dri.so
 usr/lib/arm-linux-gnueabihf/dri/vc4_dri.so
 usr/lib/arm-linux-gnueabihf/dri/virtio_gpu_dri.so
 usr/lib/arm-linux-gnueabihf/dri/virtio_gpu_drv_video.so
+usr/lib/arm-linux-gnueabihf/dri/vkms_dri.so
 usr/lib/arm-linux-gnueabihf/dri/vmwgfx_dri.so
 usr/lib/arm-linux-gnueabihf/dri/zink_dri.so
+usr/lib/arm-linux-gnueabihf/dri/zynqmp-dpsub_dri.so
 usr/lib/arm-linux-gnueabihf/libEGL.so.1*
 usr/lib/arm-linux-gnueabihf/libEGL_mesa.so.0*
 usr/lib/arm-linux-gnueabihf/libGL.so.1*
@@ -66,6 +72,8 @@ usr/lib/arm-linux-gnueabihf/libGLX_mesa.so.0*
 usr/lib/arm-linux-gnueabihf/libGLdispatch.so.0*
 usr/lib/arm-linux-gnueabihf/libLLVM-17.so
 usr/lib/arm-linux-gnueabihf/libLLVM-17.so.1*
+usr/lib/arm-linux-gnueabihf/libLLVM-19.so
+usr/lib/arm-linux-gnueabihf/libLLVM.so.19*
 usr/lib/arm-linux-gnueabihf/libVkLayer_MESA_device_select.so
 usr/lib/arm-linux-gnueabihf/libVkLayer_MESA_overlay.so
 usr/lib/arm-linux-gnueabihf/libX11-xcb.so.1*
@@ -79,6 +87,7 @@ usr/lib/arm-linux-gnueabihf/libXxf86vm.so.1*
 usr/lib/arm-linux-gnueabihf/libdrm_amdgpu.so.1*
 usr/lib/arm-linux-gnueabihf/libdrm_nouveau.so.2*
 usr/lib/arm-linux-gnueabihf/libdrm_radeon.so.1*
+usr/lib/arm-linux-gnueabihf/libgallium-24.2.8-1ubuntu1~24.04.1.so
 usr/lib/arm-linux-gnueabihf/libgbm.so.1*
 usr/lib/arm-linux-gnueabihf/libglapi.so.0*
 usr/lib/arm-linux-gnueabihf/libicudata.so.74*
@@ -88,6 +97,8 @@ usr/lib/arm-linux-gnueabihf/libicutest.so.74*
 usr/lib/arm-linux-gnueabihf/libicutu.so.74*
 usr/lib/arm-linux-gnueabihf/libicuuc.so.74*
 usr/lib/arm-linux-gnueabihf/libnvidia-egl-wayland.so.1*
+usr/lib/arm-linux-gnueabihf/libnvidia-egl-xcb.so.1*
+usr/lib/arm-linux-gnueabihf/libnvidia-egl-xlib.so.1*
 usr/lib/arm-linux-gnueabihf/libsensors.so.5*
 usr/lib/arm-linux-gnueabihf/libva-drm.so.2*
 usr/lib/arm-linux-gnueabihf/libva-wayland.so.2*
@@ -98,6 +109,7 @@ usr/lib/arm-linux-gnueabihf/libvulkan.so.1*
 usr/lib/arm-linux-gnueabihf/libvulkan_broadcom.so
 usr/lib/arm-linux-gnueabihf/libvulkan_freedreno.so
 usr/lib/arm-linux-gnueabihf/libvulkan_lvp.so
+usr/lib/arm-linux-gnueabihf/libvulkan_nouveau.so
 usr/lib/arm-linux-gnueabihf/libvulkan_radeon.so
 usr/lib/arm-linux-gnueabihf/libvulkan_virtio.so
 usr/lib/arm-linux-gnueabihf/libwayland-client.so.0*
@@ -143,6 +155,8 @@ usr/share/bug/libglx-mesa0/control
 usr/share/bug/libglx-mesa0/script
 usr/share/bug/libglx0/control
 usr/share/bug/libvdpau1
+usr/share/bug/mesa-libgallium/control
+usr/share/bug/mesa-libgallium/script
 usr/share/bug/mesa-va-drivers/control
 usr/share/bug/mesa-va-drivers/script
 usr/share/bug/mesa-vdpau-drivers/control
@@ -184,6 +198,8 @@ usr/share/doc/libicu74/changelog.Debian.gz
 usr/share/doc/libicu74/copyright
 usr/share/doc/libllvm17t64/changelog.Debian.gz
 usr/share/doc/libllvm17t64/copyright
+usr/share/doc/libllvm19/changelog.Debian.gz
+usr/share/doc/libllvm19/copyright
 usr/share/doc/libnvidia-egl-wayland1/changelog.Debian.gz
 usr/share/doc/libnvidia-egl-wayland1/copyright
 usr/share/doc/libsensors-config/changelog.Debian.gz
@@ -257,6 +273,8 @@ usr/share/doc/libxshmfence1/changelog.Debian.gz
 usr/share/doc/libxshmfence1/copyright
 usr/share/doc/libxxf86vm1/changelog.Debian.gz
 usr/share/doc/libxxf86vm1/copyright
+usr/share/doc/mesa-libgallium/changelog.Debian.gz
+usr/share/doc/mesa-libgallium/copyright
 usr/share/doc/mesa-va-drivers/changelog.Debian.gz
 usr/share/doc/mesa-va-drivers/copyright
 usr/share/doc/mesa-vdpau-drivers/changelog.Debian.gz
@@ -270,6 +288,8 @@ usr/share/doc/vdpau-driver-all/copyright
 usr/share/drirc.d/00-mesa-defaults.conf
 usr/share/drirc.d/00-radv-defaults.conf
 usr/share/egl/egl_external_platform.d/10_nvidia_wayland.json
+usr/share/egl/egl_external_platform.d/20_nvidia_xcb.json
+usr/share/egl/egl_external_platform.d/20_nvidia_xlib.json
 usr/share/glvnd/egl_vendor.d/50_mesa.json
 usr/share/libdrm/amdgpu.ids
 usr/share/lintian/overrides/libgbm1
@@ -278,8 +298,10 @@ usr/share/lintian/overrides/libgles2
 usr/share/lintian/overrides/libglvnd0
 usr/share/lintian/overrides/libicu74
 usr/share/lintian/overrides/libllvm17t64
+usr/share/lintian/overrides/libllvm19
 usr/share/lintian/overrides/libx11-6
 usr/share/lintian/overrides/libxml2
+usr/share/lintian/overrides/mesa-libgallium
 usr/share/lintian/overrides/mesa-vulkan-drivers
 usr/share/man/man5/Compose.5.gz
 usr/share/man/man5/XCompose.5.gz
@@ -287,6 +309,7 @@ usr/share/vulkan/explicit_layer.d/VkLayer_MESA_overlay.json
 usr/share/vulkan/icd.d/broadcom_icd.armv7l.json
 usr/share/vulkan/icd.d/freedreno_icd.armv7l.json
 usr/share/vulkan/icd.d/lvp_icd.armv7l.json
+usr/share/vulkan/icd.d/nouveau_icd.armv7l.json
 usr/share/vulkan/icd.d/radeon_icd.armv7l.json
 usr/share/vulkan/icd.d/virtio_icd.armv7l.json
 usr/share/vulkan/implicit_layer.d/VkLayer_MESA_device_select.json
