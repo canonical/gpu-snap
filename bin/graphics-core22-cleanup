@@ -5,29 +5,29 @@ SELF="$( cd -- "$(dirname "$0")/.." ; pwd -P )"
 
 TMP_FOLDER=/tmp/snap-lists
 
-rm -rf $TMP_FOLDER
-mkdir -p $TMP_FOLDER
+rm -rf ${TMP_FOLDER}
+mkdir -p ${TMP_FOLDER}
 
 (
   for provider in "$@"; do
-    snap download --target-directory $TMP_FOLDER/ --basename $provider $provider
+    snap download --target-directory ${TMP_FOLDER}/ --basename ${provider} ${provider}
     # Process the list exactly like the CI script, to allow to compare it
     # with the ones here.
-    unsquashfs -cat $TMP_FOLDER/$provider.snap snap/${CRAFT_TARGET_ARCH}.list \
+    unsquashfs -cat ${TMP_FOLDER}/${provider}.snap snap/${CRAFT_TARGET_ARCH}.list \
              | sed 's/\(.so.[0-9]\+\)\([0-9\.]\+\)\?$/\1*/' \
              | sort -u \
-             > $TMP_FOLDER/original-list.txt
-    sort -u ${SELF}/lists/$provider.${CRAFT_TARGET_ARCH}.list \
-             > $TMP_FOLDER/compare-list.txt
+             > ${TMP_FOLDER}/original-list.txt
+    sort -u ${SELF}/lists/${provider}.${CRAFT_TARGET_ARCH}.list \
+             > ${TMP_FOLDER}/compare-list.txt
     # If the lists are different, cmp will fail and thus the script too.
     # This ensures that if the upstream snap and this one aren't in sync,
     # the build will be aborted
-    cmp $TMP_FOLDER/original-list.txt $TMP_FOLDER/compare-list.txt
-    rm -rf $TMP_FOLDER/*
+    cmp ${TMP_FOLDER}/original-list.txt ${TMP_FOLDER}/compare-list.txt
+    rm -rf ${TMP_FOLDER}/*
   done
 )
 
-rm -rf $TMP_FOLDER
+rm -rf ${TMP_FOLDER}
 
 rm -f $(
   (
