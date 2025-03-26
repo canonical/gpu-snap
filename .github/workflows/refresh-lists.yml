@@ -44,8 +44,6 @@ jobs:
           echo -n "${{ steps.snap-matrix.outputs.matrix }}" |
             xargs -d' ' -n3 -P`nproc` \
               bash -xc "unsquashfs -cat \$0_\$2.snap snap/\$2.list \
-                | sed 's/\(.so.[0-9]\+\)\([0-9\.]\+\)\?$/\1*/' \
-                | sort -u \
                 > graphics-core/lists/\$0.\$2.list"
 
       - name: Create pull request
