@@ -8,14 +8,8 @@ TMP_FOLDER=$(mktemp -d)
 (
   for provider in "$@"; do
     snap download --target-directory ${TMP_FOLDER}/ --basename ${provider} ${provider}
-    # Process the list exactly like the CI script, to allow to compare it
-    # with the ones here.
     unsquashfs -cat ${TMP_FOLDER}/${provider}.snap snap/${CRAFT_TARGET_ARCH}.list \
-             | sed 's/\(.so.[0-9]\+\)\([0-9\.]\+\)\?$/\1*/' \
-             | sort -u \
              > ${TMP_FOLDER}/original-list.txt
-    sort -u ${SELF}/lists/${provider}.${CRAFT_TARGET_ARCH}.list \
-             > ${TMP_FOLDER}/compare-list.txt
     # If the lists are different, cmp will fail and thus the script too.
     # This ensures that if the upstream snap and this one aren't in sync,
     # the build will be aborted
