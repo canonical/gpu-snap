@@ -19,7 +19,7 @@ TMP_FOLDER=$(mktemp -d)
     # If the lists are different, cmp will fail and thus the script too.
     # This ensures that if the upstream snap and this one aren't in sync,
     # the build will be aborted
-    cmp ${TMP_FOLDER}/original-list.txt ${TMP_FOLDER}/compare-list.txt
+    cmp ${TMP_FOLDER}/original-list.txt ${SELF}/lists/${provider}.${CRAFT_TARGET_ARCH}.list
     rm -rf ${TMP_FOLDER}/*
   done
 )
