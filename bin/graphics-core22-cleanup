@@ -3,10 +3,7 @@ set -euo pipefail
 
 SELF="$( cd -- "$(dirname "$0")/.." ; pwd -P )"
 
-TMP_FOLDER=/tmp/snap-lists
-
-rm -rf ${TMP_FOLDER}
-mkdir -p ${TMP_FOLDER}
+TMP_FOLDER=$(mktemp -d)
 
 (
   for provider in "$@"; do
