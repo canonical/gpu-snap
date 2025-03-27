@@ -53,7 +53,7 @@ jobs:
         with:
           path: graphics-core
           add-paths: lists/*
-          branch: refresh-lists-${{ github.run_id }}
+          branch: refresh-lists
           commit-message: |
             Refresh snap lists
 
