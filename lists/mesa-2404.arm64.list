@@ -1,12 +1,15 @@
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
+usr/lib/*/libgallium-*.so
 usr/lib/*/libvulkan_*.so
 usr/lib/*/vdpau/*
+usr/share/X11/locale/*
 usr/share/drirc.d/*
 usr/share/egl/egl_external_platform.d/*
 usr/share/glvnd/egl_vendor.d/*
 usr/share/libdrm/*
 usr/share/vulkan/*.d/*
+usr/lib/aarch64-linux-gnu/gbm/dri_gbm.so
 usr/lib/aarch64-linux-gnu/libEGL.so.1*
 usr/lib/aarch64-linux-gnu/libEGL_mesa.so.0*
 usr/lib/aarch64-linux-gnu/libGL.so.1*
@@ -18,7 +21,9 @@ usr/lib/aarch64-linux-gnu/libGLdispatch.so.0*
 usr/lib/aarch64-linux-gnu/libLLVM-17.so
 usr/lib/aarch64-linux-gnu/libLLVM-17.so.1*
 usr/lib/aarch64-linux-gnu/libLLVM-19.so
+usr/lib/aarch64-linux-gnu/libLLVM-20.so
 usr/lib/aarch64-linux-gnu/libLLVM.so.19*
+usr/lib/aarch64-linux-gnu/libLLVM.so.20*
 usr/lib/aarch64-linux-gnu/libX11-xcb.so.1*
 usr/lib/aarch64-linux-gnu/libX11.so.6*
 usr/lib/aarch64-linux-gnu/libXau.so.6*
@@ -30,7 +35,6 @@ usr/lib/aarch64-linux-gnu/libXxf86vm.so.1*
 usr/lib/aarch64-linux-gnu/libdrm_amdgpu.so.1*
 usr/lib/aarch64-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/aarch64-linux-gnu/libdrm_radeon.so.1*
-usr/lib/aarch64-linux-gnu/libgallium-24.2.8-1ubuntu1~24.04.1.so
 usr/lib/aarch64-linux-gnu/libgbm.so.1*
 usr/lib/aarch64-linux-gnu/libglapi.so.0*
 usr/lib/aarch64-linux-gnu/libicudata.so.74*
@@ -127,6 +131,8 @@ usr/share/doc/libllvm17t64/changelog.Debian.gz
 usr/share/doc/libllvm17t64/copyright
 usr/share/doc/libllvm19/changelog.Debian.gz
 usr/share/doc/libllvm19/copyright
+usr/share/doc/libllvm20/changelog.Debian.gz
+usr/share/doc/libllvm20/copyright
 usr/share/doc/libnvidia-egl-gbm1/changelog.Debian.gz
 usr/share/doc/libnvidia-egl-gbm1/copyright
 usr/share/doc/libnvidia-egl-wayland1/changelog.Debian.gz
@@ -221,6 +227,7 @@ usr/share/lintian/overrides/libglvnd0
 usr/share/lintian/overrides/libicu74
 usr/share/lintian/overrides/libllvm17t64
 usr/share/lintian/overrides/libllvm19
+usr/share/lintian/overrides/libllvm20
 usr/share/lintian/overrides/libx11-6
 usr/share/lintian/overrides/libxml2
 usr/share/lintian/overrides/mesa-libgallium
