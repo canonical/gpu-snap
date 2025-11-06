@@ -3,7 +3,7 @@ set -euo pipefail
 
 SELF="$( cd -- "$(dirname "$0")/.." ; pwd -P )"
 
-rm -f $(
+rm -rf $(
   (
     for provider in "$@"; do
       cat ${SELF}/lists/$provider.${CRAFT_TARGET_ARCH}.list
