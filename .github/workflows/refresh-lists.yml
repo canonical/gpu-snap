@@ -48,7 +48,7 @@ jobs:
                 > graphics-core/lists/\$0.\$2.list"
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           path: graphics-core
           add-paths: lists/*
