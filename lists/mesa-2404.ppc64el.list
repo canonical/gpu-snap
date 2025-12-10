@@ -32,6 +32,7 @@ usr/lib/powerpc64le-linux-gnu/libXdmcp.so.6*
 usr/lib/powerpc64le-linux-gnu/libXext.so.6*
 usr/lib/powerpc64le-linux-gnu/libXfixes.so.3*
 usr/lib/powerpc64le-linux-gnu/libXxf86vm.so.1*
+usr/lib/powerpc64le-linux-gnu/libdrm.so.2*
 usr/lib/powerpc64le-linux-gnu/libdrm_amdgpu.so.1*
 usr/lib/powerpc64le-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/powerpc64le-linux-gnu/libdrm_radeon.so.1*
@@ -108,6 +109,7 @@ usr/share/doc/libegl-mesa0/changelog.Debian.gz
 usr/share/doc/libegl-mesa0/copyright
 usr/share/doc/libegl1/changelog.Debian.gz
 usr/share/doc/libegl1/copyright
+usr/share/doc/libgbm1/README.Debian
 usr/share/doc/libgbm1/changelog.Debian.gz
 usr/share/doc/libgbm1/copyright
 usr/share/doc/libgl1-mesa-dri/changelog.Debian.gz
