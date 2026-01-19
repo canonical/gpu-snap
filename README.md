@@ -3,6 +3,47 @@ GPU userspace helpers for snaps.
 
 This repository contains some helper items for working with the interfaces supplying GPU userspace for snaps.
 
+## `base: core26` snaps
+
+1. `bin/gpu-2604-wrapper`
+   You should prime this script in your snap and use it in your `command-chain:` for all
+   apps requiring GPU support:
+   ```yaml
+   apps:
+     app:
+       plugs:
+         - opengl
+         - wayland
+       command-chain:
+         - bin/gpu-2604-wrapper
+       command: usr/bin/eglinfo
+   ```
+
+   **NB**: the script assumes that `gpu-2604.target:` is set to `$SNAP/gpu-2604`.
+
+2. `bin/gpu-2604-cleanup`
+   This is a script to help avoid priming any libraries provided by the content providers.
+   You should run it in `override-prime:` of the part whose source is this repository, `after:`
+   any parts that stage any libraries, passing the names of the providers you want to make sure
+   you're compatible with:
+
+   ```yaml
+   parts:
+     my-app:
+       stage-packages:
+     # ...
+
+     gpu-2604:
+       after: [my-app]
+       source: https://github.com/canonical/gpu-snap.git
+       plugin: dump
+       override-prime: |
+         craftctl default
+         ${CRAFT_PART_SRC}/bin/gpu-2604-cleanup mesa-2604
+       prime:
+         - bin/gpu-2604-wrapper
+   ```
+
 ## `base: core24` snaps
 
 1. `bin/gpu-2404-wrapper`
