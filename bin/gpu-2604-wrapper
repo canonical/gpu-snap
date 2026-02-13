@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if ! snapctl is-connected gpu-2604
+then
+  echo "ERROR: the gpu-2604 interface isn't connected."
+  echo "  Please install and connect a graphics userspace provider."
+  echo ""
+  echo "The default provider is mesa-2604, you can install it and connect by issuing:"
+  echo "  sudo snap install mesa-2604"
+  echo "  sudo snap connect ${SNAP_INSTANCE_NAME}:gpu-2604 mesa-2604"
+  echo ""
+  echo "See https://mir-server.io/docs/the-gpu-2604-snap-interface for more information."
+  exit 1
+fi
+
+exec "${SNAP}/gpu-2604/bin/gpu-2604-provider-wrapper" "$@"
