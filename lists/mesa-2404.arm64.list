@@ -1,5 +1,6 @@
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
+usr/lib/*/libdrm_*.so*
 usr/lib/*/libgallium-*.so
 usr/lib/*/libvulkan_*.so
 usr/lib/*/vdpau/*
@@ -33,9 +34,6 @@ usr/lib/aarch64-linux-gnu/libXext.so.6*
 usr/lib/aarch64-linux-gnu/libXfixes.so.3*
 usr/lib/aarch64-linux-gnu/libXxf86vm.so.1*
 usr/lib/aarch64-linux-gnu/libdrm.so.2*
-usr/lib/aarch64-linux-gnu/libdrm_amdgpu.so.1*
-usr/lib/aarch64-linux-gnu/libdrm_nouveau.so.2*
-usr/lib/aarch64-linux-gnu/libdrm_radeon.so.1*
 usr/lib/aarch64-linux-gnu/libgbm.so.1*
 usr/lib/aarch64-linux-gnu/libglapi.so.0*
 usr/lib/aarch64-linux-gnu/libicudata.so.74*
@@ -100,10 +98,18 @@ usr/share/doc/libdrm-amdgpu1/changelog.Debian.gz
 usr/share/doc/libdrm-amdgpu1/copyright
 usr/share/doc/libdrm-common/changelog.Debian.gz
 usr/share/doc/libdrm-common/copyright
+usr/share/doc/libdrm-etnaviv1/changelog.Debian.gz
+usr/share/doc/libdrm-etnaviv1/copyright
+usr/share/doc/libdrm-freedreno1/changelog.Debian.gz
+usr/share/doc/libdrm-freedreno1/copyright
+usr/share/doc/libdrm-intel1/changelog.Debian.gz
+usr/share/doc/libdrm-intel1/copyright
 usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
 usr/share/doc/libdrm-nouveau2/copyright
 usr/share/doc/libdrm-radeon1/changelog.Debian.gz
 usr/share/doc/libdrm-radeon1/copyright
+usr/share/doc/libdrm-tegra0/changelog.Debian.gz
+usr/share/doc/libdrm-tegra0/copyright
 usr/share/doc/libdrm2/changelog.Debian.gz
 usr/share/doc/libdrm2/copyright
 usr/share/doc/libegl-mesa0/changelog.Debian.gz
