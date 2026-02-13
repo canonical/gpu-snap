@@ -1,5 +1,6 @@
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
+usr/lib/*/libdrm_*.so*
 usr/lib/*/libgallium-*.so
 usr/lib/*/libvulkan_*.so
 usr/lib/*/vdpau/*
@@ -35,10 +36,6 @@ usr/lib/i386-linux-gnu/libXxf86vm.so.1*
 usr/lib/i386-linux-gnu/libatomic.so.1*
 usr/lib/i386-linux-gnu/libbsd.so.0*
 usr/lib/i386-linux-gnu/libdrm.so.2*
-usr/lib/i386-linux-gnu/libdrm_amdgpu.so.1*
-usr/lib/i386-linux-gnu/libdrm_intel.so.1*
-usr/lib/i386-linux-gnu/libdrm_nouveau.so.2*
-usr/lib/i386-linux-gnu/libdrm_radeon.so.1*
 usr/lib/i386-linux-gnu/libedit.so.2*
 usr/lib/i386-linux-gnu/libelf-0.190.so
 usr/lib/i386-linux-gnu/libelf.so.1*
@@ -109,10 +106,6 @@ usr/lib/x86_64-linux-gnu/libXext.so.6*
 usr/lib/x86_64-linux-gnu/libXfixes.so.3*
 usr/lib/x86_64-linux-gnu/libXxf86vm.so.1*
 usr/lib/x86_64-linux-gnu/libdrm.so.2*
-usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1*
-usr/lib/x86_64-linux-gnu/libdrm_intel.so.1*
-usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2*
-usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1*
 usr/lib/x86_64-linux-gnu/libgbm.so.1*
 usr/lib/x86_64-linux-gnu/libglapi.so.0*
 usr/lib/x86_64-linux-gnu/libicudata.so.74*

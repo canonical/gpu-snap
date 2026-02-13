@@ -1,5 +1,6 @@
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
+usr/lib/*/libdrm_*.so*
 usr/lib/*/libgallium-*.so
 usr/lib/*/libvulkan_*.so
 usr/lib/*/vdpau/*
@@ -33,9 +34,6 @@ usr/lib/powerpc64le-linux-gnu/libXext.so.6*
 usr/lib/powerpc64le-linux-gnu/libXfixes.so.3*
 usr/lib/powerpc64le-linux-gnu/libXxf86vm.so.1*
 usr/lib/powerpc64le-linux-gnu/libdrm.so.2*
-usr/lib/powerpc64le-linux-gnu/libdrm_amdgpu.so.1*
-usr/lib/powerpc64le-linux-gnu/libdrm_nouveau.so.2*
-usr/lib/powerpc64le-linux-gnu/libdrm_radeon.so.1*
 usr/lib/powerpc64le-linux-gnu/libgbm.so.1*
 usr/lib/powerpc64le-linux-gnu/libglapi.so.0*
 usr/lib/powerpc64le-linux-gnu/libicudata.so.74*
