@@ -1,3 +1,4 @@
+# Non-strict globs
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
 usr/lib/*/libdrm_*.so*
@@ -10,6 +11,7 @@ usr/share/egl/egl_external_platform.d/*
 usr/share/glvnd/egl_vendor.d/*
 usr/share/libdrm/*
 usr/share/vulkan/*.d/*
+# Content
 usr/lib/s390x-linux-gnu/gbm/dri_gbm.so
 usr/lib/s390x-linux-gnu/libEGL.so.1*
 usr/lib/s390x-linux-gnu/libEGL_mesa.so.0*
