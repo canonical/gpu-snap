@@ -2,13 +2,28 @@
 set -euo pipefail
 
 SELF="$( cd -- "$(dirname "$0")/.." ; pwd -P )"
+STRICT="false"
+
+if [ "$1" = "--strict" ]; then
+  # In strict mode, we only remove files that were staged in the provider,
+  # skipping glob patterns designed to further consumers.
+  # This is useful to e.g. pc-kernel's Nvidia components, which need to provide
+  # userspace, but want to deduplicate with the Mesa snaps.
+  STRICT="true"
+  shift
+fi
 
 rm -rf $(
   (
     for provider in "$@"; do
       cat ${SELF}/lists/$provider.${CRAFT_TARGET_ARCH}.list
     done
-  ) | sort -u | awk "/.+/ { print \"${CRAFT_PRIME}/\" \$0 }"
+  ) | awk "
+    /^# Non-strict globs/ { non_strict=\"${STRICT}\" }
+    /^# Content/ { non_strict=false }
+    /^#/ { next }
+    /.+/ { if (non_strict != \"true\") print \"${CRAFT_PRIME}/\" \$0 }
+  " | sort -u
 )
 
 find "${CRAFT_PRIME}" -type d -empty -delete
