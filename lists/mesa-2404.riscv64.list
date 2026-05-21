@@ -1,3 +1,4 @@
+# Non-strict globs
 usr/lib/*/dri/*
 usr/lib/*/libVkLayer_*.so
 usr/lib/*/libgallium-*.so
@@ -9,6 +10,7 @@ usr/share/egl/egl_external_platform.d/*
 usr/share/glvnd/egl_vendor.d/*
 usr/share/libdrm/*
 usr/share/vulkan/*.d/*
+# Content
 usr/lib/riscv64-linux-gnu/gbm/dri_gbm.so
 usr/lib/riscv64-linux-gnu/libEGL.so.1*
 usr/lib/riscv64-linux-gnu/libEGL_mesa.so.0*
