@@ -26,5 +26,5 @@ rm -rf $(
   " | sort -u
 )
 
-find "${CRAFT_PRIME}" -type d -empty -delete
 find "${CRAFT_PRIME}" -xtype l -delete
+find "${CRAFT_PRIME}" -type d -empty -delete
