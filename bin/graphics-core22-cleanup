@@ -27,3 +27,4 @@ rm -rf $(
 )
 
 find "${CRAFT_PRIME}" -type d -empty -delete
+find "${CRAFT_PRIME}" -xtype l -delete
