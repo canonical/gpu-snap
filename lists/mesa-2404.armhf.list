@@ -106,7 +106,7 @@ usr/lib/arm-linux-gnueabihf/libdrm_nouveau.so.2*
 usr/lib/arm-linux-gnueabihf/libdrm_omap.so.1*
 usr/lib/arm-linux-gnueabihf/libdrm_radeon.so.1*
 usr/lib/arm-linux-gnueabihf/libdrm_tegra.so.0*
-usr/lib/arm-linux-gnueabihf/libgallium-25.2.8-0ubuntu0.24.04.2.so
+usr/lib/arm-linux-gnueabihf/libgallium-25.2.8-0ubuntu0.24.04.3.so
 usr/lib/arm-linux-gnueabihf/libgbm.so.1*
 usr/lib/arm-linux-gnueabihf/libglapi.so.0*
 usr/lib/arm-linux-gnueabihf/libicudata.so.74*

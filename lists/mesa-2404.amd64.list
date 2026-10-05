@@ -108,7 +108,7 @@ usr/lib/i386-linux-gnu/libelf.so.1*
 usr/lib/i386-linux-gnu/libexpat.so.1*
 usr/lib/i386-linux-gnu/libexpatw.so.1*
 usr/lib/i386-linux-gnu/libffi.so.8*
-usr/lib/i386-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.2.so
+usr/lib/i386-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.3.so
 usr/lib/i386-linux-gnu/libgbm.so.1*
 usr/lib/i386-linux-gnu/libglapi.so.0*
 usr/lib/i386-linux-gnu/libicudata.so.74*
@@ -254,7 +254,7 @@ usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1*
 usr/lib/x86_64-linux-gnu/libdrm_intel.so.1*
 usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1*
-usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.2.so
+usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.3.so
 usr/lib/x86_64-linux-gnu/libgbm.so.1*
 usr/lib/x86_64-linux-gnu/libglapi.so.0*
 usr/lib/x86_64-linux-gnu/libicudata.so.74*
