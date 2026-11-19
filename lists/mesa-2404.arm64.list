@@ -110,7 +110,7 @@ usr/lib/aarch64-linux-gnu/libdrm_intel.so.1*
 usr/lib/aarch64-linux-gnu/libdrm_nouveau.so.2*
 usr/lib/aarch64-linux-gnu/libdrm_radeon.so.1*
 usr/lib/aarch64-linux-gnu/libdrm_tegra.so.0*
-usr/lib/aarch64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.2.so
+usr/lib/aarch64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so
 usr/lib/aarch64-linux-gnu/libgbm.so.1*
 usr/lib/aarch64-linux-gnu/libglapi.so.0*
 usr/lib/aarch64-linux-gnu/libicudata.so.74*
@@ -434,6 +434,8 @@ usr/share/doc/libnvidia-egl-gbm1/changelog.Debian.gz
 usr/share/doc/libnvidia-egl-gbm1/copyright
 usr/share/doc/libnvidia-egl-wayland1/changelog.Debian.gz
 usr/share/doc/libnvidia-egl-wayland1/copyright
+usr/share/doc/libpciaccess0/changelog.Debian.gz
+usr/share/doc/libpciaccess0/copyright
 usr/share/doc/libsensors-config/changelog.Debian.gz
 usr/share/doc/libsensors-config/copyright
 usr/share/doc/libsensors5/README.Debian
